@@ -1,0 +1,77 @@
+<!-- 1 -->
+1. JS-ში როგორ შეიძლება ტექსტის ფერის შეცვლა?
+ <!-- პასუხი: element.style.color= 'red'; -->
+2. DOM-დან ელემენტის წასაშლელეად რომელი მეთოდი გამოიყენება?
+<!-- პასუხი: element.remove(); -->
+3. როგორ შეიძლება ელემენტზე ID ატრიბუტის დასეტვა?
+ <!-- პასუხი: element.setAttribute('_id', 'test-id') -->
+4. როგორ შეგვიძლია DOM-ში ელემენტები პოსვნა id- დახმარებით?
+ <!-- პასუხი: document.queryselector('#id') -->
+5. რომელი შეიძლება იყოს custom elemnt-ს ტაგის სახელი?
+ <!-- პასუხი: custom-element-name -->
+
+ <!-- 2 -->
+ 1. JS-ში როგორ უნდა შევქმნათ ხუთ ელემენტიანი მასივი ისე რომ მისი ყველა ელემენტების
+მნიშვნელობები არ განისაზღვროს?
+ <!-- პასუხი: const arr = new array(5); -->
+2. JS-ში რიცხვითი მნიშვნელობების განსაზღვრელი ტიპი არის
+ <!-- პასუხი: number -->
+3. რომელია ტექსტის დინამიურად ფორმატირების სწორი ფორმა?
+ <!-- პასუხი: 'format {variable}' -->
+4. JS-ში რამდენი ტიპის ცვლადი არსებობს?
+ <!-- პასუხი: 3 -->
+5. JS-ში რომელი ფუქციით ხდება მასივში ელემენტების დამატება?
+ <!-- პასუხი: push -->
+
+ <!-- 3 -->
+ 1. რომელი რეგესტრის პატრონი ამოიღებს მოცემული ტექსტიდან რიცხვს? "one two
+100".match(<pattern>)"
+ <!-- პასუხი: /\d+/ -->
+2. რომელი keyword გამოიყენება ნებისმიერი ერორის დასაჭერად?
+ <!-- პასუხი: catch -->
+3. let name = "John";
+ function sayHi(){
+ console.log("Hi, " + name);
+ }
+ name = "Pete";
+ sayHi();
+რა დაიბეჭდება კონსოლში?
+ <!-- პასუხი: Hi, Pete -->
+ 4.
+class ValidationError extends Error {
+constructor(message) {
+ super(message); // (1)
+ this.name = "ValidationError"; // (2)
+ }
+}
+function test() {
+throw new ValidationError("Whoops!")
+}
+try {
+test();
+}
+catch(err) {
+console.log(err.message);
+}
+რა იქნება კოდის შედეგი?
+ <!-- პასუხი: Whoops! -->
+5.
+function makeWorker() {
+ let name = "Pete";
+ return function() {
+ console.log(name);
+ };
+}
+let name = "Jhon";
+//create a function
+let work = makeWorker();
+//call it
+work();
+რა დაიბეჭდება კონსოლში?
+ <!-- პასუხი: Pete -->
+
+ <!-- 4 -->
+ 1. Local storage browser- ის გათიშვის შემდეგ სუფთავდება
+ <!-- პასუხი: false -->
+2. session storage browser- ის გათიშვის შემდეგ სუფთავდება
+ <!-- პასუხი: false -->
